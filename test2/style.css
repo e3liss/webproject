@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(214, 216, 223);
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.text {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.start-of-the-group {
+    border-radius: 1000px;
+    background-color: rgba(44, 46, 244, 0.1);
+    border: 1px solid #2c2ef4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    color: #2c2ef4;
+}
+
+.designing-the-future {
+    letter-spacing: -0.05em;
+    line-height: 100%;
+    font-weight: 500;
+    font-family:Inter;
+}
+
+.modern-web-design {
+   font-size:80px;
+    letter-spacing: -0.05em;
+    line-height: 100%;
+    font-weight:600;
+    font-family: Inter;
+}
+
+.high-quality-web-design {
+    letter-spacing: -0.05em;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+.navbar {
+    z-index: 1010;
+}
+
+.offcanvas {
+    width: 250px;
+}
+
+.offcanvas-header, .offcanvas-body {
+    padding: 20px;
+}
+
+.offcanvas-body .form-control, .offcanvas-body .btn {
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+/* Card Styles */
+.container {
+       height:420px;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-1, .card-2, .card-3 {
+    height: 400px; 
+    width: 400px; 
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+    background-image: url('images/image 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: #fff;
+}
+
+.digital-solutions-wrapper, .stunning-web-experiences-wrapper {
+    backdrop-filter: blur(10px);
+    border-radius: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-family: Inter;
+   
+}
+
+.digital-solutions-wrapper {
+    top: 20%;
+}
+
+.stunning-web-experiences-wrapper {
+    top: 50%;
+}
+
+.card-2 {
+    background-color: #151517;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.words {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.card-3 {
+    background-color: #2c2ef4;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.olenaprod-best-experience-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.olenaprod-best, .we-strive-to {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 400px) and (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .card-1, .card-2, .card-3 {
+        flex: 0 1 200px; 
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .modern-web-design {
+        font-size: 50px;
+    }
+    .text {
+        margin-top: 50px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .digital-solutions-wrapper, .stunning-web-experiences-wrapper {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-1, .card-2, .card-3 {
+        width: 100%; 
+        height: auto; 
+    }
+    .modern-web-design {
+        font-size: 36px;
+    }
+    .high-quality-web-design {
+        font-size: 14px;
+    }
+    .text {
+        margin-top: 20px;
+    }
+    .card {
+        margin: 5px;
+    }
+    .digital-solutions-wrapper, .stunning-web-experiences-wrapper {
+        top: auto;
+        position: static;
+        width: 90%;
+        padding: 10px;
+    }
+    .olenaprod-best {
+        font-size: 18px;
+    }
+    .we-strive-to {
+        font-size: 12px;
+    }
+}
+
